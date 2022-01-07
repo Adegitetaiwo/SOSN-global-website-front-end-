@@ -48,7 +48,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo60x37.png" alt=""></a>
+					<a class="navbar-brand logo_h" href="."><img src="img/logo60x37.png" alt=""></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
@@ -58,7 +58,7 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item active"><a class="nav-link" href=".">Home</a></li>
 							<li class="nav-item"><a class="nav-link" href="program-register.html">Register</a></li>
 							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 						</ul>
@@ -497,6 +497,11 @@
 
 	<!--================ Start footer Area  =================-->
 	<footer class="footer-area section_gap">
+
+		<!-- begin: scrol to top botton -->
+		<button id="back2top"><span class="fa fa-chevron-up"></span></button>
+		<!-- end: scrol to top botton -->
+
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-md-6 single-footer-widget">
@@ -559,6 +564,52 @@
 	<script src="js/jquery.ajaxchimp.min.js"></script>
 	<script src="vendors/counter-up/jquery.counterup.js"></script>
 	<script src="js/mail-script.js"></script>
+	<script type="text/javascript" src="js/back2top.min.js"></script>
+	<script>
+		const button = document.querySelector("#back2top");
+		BACK2TOP(button, 200);
+
+		// BACK2TOP(selector, offset, prop, time, effect, delay);
+		BACK2TOP(button, 200, "all", 300, "ease", 0);
+	</script>
+	<script>
+    // Select all links with hashes
+        $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function (event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                    &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1100, function () {
+                            // Callback after animation
+                            // Must change focus!
+                            var $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) { // Checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                $target.focus(); // Set focus again
+                            };
+                        });
+                    }
+                }
+            });
+</script>
 	<!--gmaps Js-->
 	<script src="js/theme.js"></script>
 </body>
