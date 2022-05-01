@@ -17,6 +17,12 @@ theme.
 /*----------------------------------------------------*/
 /*font Variables*/
 /*Color Variables*/
+@media (max-width: 480px) {
+  #header_action_link {
+    line-height: 1.8rem !important;
+  }
+}
+
 .proceed_btn {
   display: none !important;
 }
