@@ -22,7 +22,9 @@ theme.
     line-height: 1.8rem !important;
   }
 }
-
+.download_link:hover{
+  color: red;
+}
 .proceed_btn {
   display: none !important;
 }
