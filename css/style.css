@@ -21,7 +21,7 @@ theme.
 
 .share-it-container {
   width: 80%;
-  height: 10rem;
+  height: 13rem;
   margin: auto;
   background-color: #f5f5f5;
   border-radius: 15px;
@@ -65,10 +65,11 @@ theme.
 #clickToCopy {
   width: 60%;
   position: relative;
-  top: -60px;
+  top: -95px;
   box-shadow: 0 0 0 .2rem rgba(122, 122, 122, 0.25);
   border: none;
   border-radius: 5px;
+  left: 20%;
 }
 #clickToCopy:hover{
   background-color: #e2e2e2;
