@@ -21,18 +21,16 @@ theme.
 
 .share-it-container {
   width: 80%;
-  height: 5rem;
+  height: 10rem;
   margin: auto;
   background-color: #e0e0e0;
   border-radius: 15px;
   display: flex;
-  /* Both of the following are required for text-overflow */
-  white-space: nowrap;
-  overflow: hidden;
 }
 @media (max-width: 480px) {
   .share-it-container {
     flex-wrap: wrap;
+    height: 25rem;
   }
 }
 .share-it-container .file button{
@@ -43,23 +41,29 @@ theme.
   color: #ffffff;
   margin-left: 10px;
   margin-top: 1.5rem;
-
+  border-radius: 10px;
+  box-shadow: 0 0 0 .2rem rgba(122, 122, 122, 0.25)
+}
+.share-it-container .file button:hover {
+  background-color: #10941b;
 }
 .share-it-container > .file img{
   width: 10%;
 }
 .share-it-container > .text{
-  /* Both of the following are required for text-overflow */
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   flex-grow: 4; /* default 0 */
   color: #000000;
+  text-align: center;
 }
-.share-it-container>.text input{
+.share-it-container>.text p{
   width: 80%;
   height: 100%;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  
+  padding: 0px 0px;
+}
+#clickToCopy {
+  border: none;
 }
 @media (max-width: 480px) {
   #header_action_link {
