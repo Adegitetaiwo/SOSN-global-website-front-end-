@@ -25,7 +25,7 @@ theme.
   margin: auto;
   background-color: #e0e0e0;
   border-radius: 15px;
-  display: flex;
+  box-shadow: 0 6px 20px 0 #2525252d;
 }
 @media (max-width: 480px) {
   .share-it-container {
@@ -35,11 +35,11 @@ theme.
 }
 .share-it-container .file button{
   border: none;
-  width: 10rem;
+  width: 70%;
   height: 2rem;
   background-color: #13b621;
   color: #ffffff;
-  margin-left: 10px;
+  margin-left: 15%;
   margin-top: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 0 .2rem rgba(122, 122, 122, 0.25)
@@ -48,10 +48,10 @@ theme.
   background-color: #10941b;
 }
 .share-it-container > .file img{
-  width: 10%;
+  padding-bottom: 0.1rem;
+  width: 1.5rem;
 }
 .share-it-container > .text{
-  flex-grow: 4; /* default 0 */
   color: #000000;
   text-align: center;
 }
@@ -60,7 +60,7 @@ theme.
   height: 100%;
   font-size: 1rem;
   
-  padding: 0px 0px;
+  margin: auto;
 }
 #clickToCopy {
   border: none;
