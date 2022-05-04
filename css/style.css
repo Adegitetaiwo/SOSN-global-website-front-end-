@@ -30,7 +30,7 @@ theme.
 @media (max-width: 480px) {
   .share-it-container {
     flex-wrap: wrap;
-    height: 25rem;
+    height: 27rem;
   }
 }
 .share-it-container .file button{
