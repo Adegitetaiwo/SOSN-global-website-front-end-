@@ -42,7 +42,7 @@ theme.
   margin-left: 15%;
   margin-top: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 0 0 .2rem rgba(122, 122, 122, 0.25)
+  box-shadow: 0 0 0 .2rem rgba(122, 122, 122, 0.25);
 }
 .share-it-container .file button:hover {
   background-color: #10941b;
@@ -59,15 +59,27 @@ theme.
   width: 80%;
   height: 100%;
   font-size: 1rem;
-  
+  padding-top: 15px;
   margin: auto;
 }
 #clickToCopy {
+  width: 60%;
+  position: relative;
+  top: -60px;
+  box-shadow: 0 0 0 .2rem rgba(122, 122, 122, 0.25);
   border: none;
+  border-radius: 5px;
+}
+#clickToCopy:hover{
+  background-color: #e2e2e2;
 }
 @media (max-width: 480px) {
   #header_action_link {
     line-height: 1.8rem !important;
+  }
+  #clickToCopy {
+    top: -95px;
+    left: 20%;
   }
 }
 .download_link:hover{
