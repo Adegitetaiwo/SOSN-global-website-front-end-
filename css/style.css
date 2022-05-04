@@ -79,9 +79,9 @@ theme.
     line-height: 1.8rem !important;
   }
   #clickToCopy {
-    width: 70%;
+    width: 80%;
     top: -95px;
-    left: 15%;
+    left: 10%;
   }
 }
 .download_link:hover{
